@@ -5,6 +5,6 @@ Implement a function that works the same as `str.split` method
 
 Example:
 ```python
-    def split(data: str, sep=None, maxsplit=- 1):
+    def split(data: str, sep=None, maxsplit=-1):
         ...
 
