@@ -1,4 +1,4 @@
-## Functions. Decorators. Decorators. Task 1.
+## Functions. Decorators. Decorators. Final Task 1.
 
 Implement a function that works the same as `str.split` method
 (without using `str.split` itself, ofcourse).
