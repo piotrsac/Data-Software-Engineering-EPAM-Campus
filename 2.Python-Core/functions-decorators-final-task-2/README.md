@@ -1,7 +1,13 @@
-# Data types. Final task 1.
+## Functions. Decorators. Final Task 2.
 
-Write a Python program to print all unique values of all dictionaries in a list.
+Implement a function `split_by_index(s: str, indexes: List[int]) -> List[str]`
+which splits the `s` string by indexes specified in `indexes`. Wrong indexes
+must be ignored.
 Examples:
+```python
+>>> split_by_index("pythoniscool,isn'tit?", [6, 8, 12, 13, 18])
+["python", "is", "cool", ",", "isn't", "it?"]
+
+>>> split_by_index("no luck", [42])
+["no luck"]
 ```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
