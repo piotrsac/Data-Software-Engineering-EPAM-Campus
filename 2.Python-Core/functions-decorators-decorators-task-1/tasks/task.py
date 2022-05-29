@@ -1,7 +1,13 @@
-from typing import List
+from typing import Dict
 
-def check(lst: List):
+execution_time: Dict[str, float] = {}
+
+
+def time_decorator():
     """
-    Add your code here or call it from here   
+    Create a decorator function `time_decorator`
+    which has to calculate decorated function execution time
+    and put this time value to `execution_time` dictionary where `key` is
+    decorated function name and `value` is this function execution time.
     """
     pass
