@@ -1,7 +1,13 @@
-# Data types. Final task 1.
+## Functions. Decorators. Recursions. Task 1.
+Define a function `seq_sum(sequence)` which allows to count sum of elements. Elements of all nested sequences should be included.
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
+Example:
+```python
+def seq_sum(sequence):
+    pass
+  
+sequence = [1,2,3,[4,5, (6,7)]]
+print(seq_sum(sequence))
+>>> 28
 ```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
+}
