@@ -3,7 +3,7 @@ from typing import Dict
 execution_time: Dict[str, float] = {}
 
 
-def time_decorator():
+def time_decorator(fn):
     """
     Create a decorator function `time_decorator`
     which has to calculate decorated function execution time
