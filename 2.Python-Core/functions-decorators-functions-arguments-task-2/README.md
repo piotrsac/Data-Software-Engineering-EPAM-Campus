@@ -1,7 +1,13 @@
-# Data types. Final task 1.
+### Functions. Decorators. Functions arguments. Task 2. 
+***
+Create generic `union` and `intersect` functions to work with sets.
+The functions must accept an arbitrary number of arguments of different types: `list`, `tuple`, `set`.
+Each function must return value of `set` type.
+For example:
+```python
+>>> union(('S', 'A', 'M'), ['S', 'P', 'A', 'C'])
+{'S', 'P', 'A', 'M', 'C'}
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
+>>> intersect(('S', 'A', 'C'), ('P', 'C', 'S'), ('G', 'H', 'S', 'C'))
+{'S', 'C'}
 ```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}

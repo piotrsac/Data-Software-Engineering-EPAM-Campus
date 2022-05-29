@@ -1,7 +1,6 @@
-from typing import List
+def union(*args) -> set:
+    raise NotImplementedError("Implement me!")
 
-def check(lst: List):
-    """
-    Add your code here or call it from here   
-    """
-    pass
+
+def intersect(*args) -> set:
+    raise NotImplementedError("Implement me!")
