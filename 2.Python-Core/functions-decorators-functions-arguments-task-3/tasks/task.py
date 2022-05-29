@@ -1,7 +1,4 @@
-from typing import List
+from typing import List, Dict
 
-def check(lst: List):
-    """
-    Add your code here or call it from here   
-    """
+def combine_dicts(*args:List) -> Dict[str, int]:
     pass
