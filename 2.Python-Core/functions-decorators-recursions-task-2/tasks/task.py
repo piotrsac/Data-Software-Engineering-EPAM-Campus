@@ -1,6 +1,6 @@
 from typing import List
 
-def check(lst: List):
+def linear_seq(sequence: List) -> List:
     """
     Add your code here or call it from here   
     """

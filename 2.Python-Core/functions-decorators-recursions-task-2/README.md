@@ -1,7 +1,12 @@
-# Data types. Final task 1.
+## Functions. Decorators. Recursions. Task 2.
+Define a function `linear_seq(sequence)` which converts a passed sequence to a sequence without nested sequences.
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
+Example:
+```python
+def linear_seq(sequence):
+    pass
+  
+sequence = [1,2,3,[4,5, (6,7)]]
+print(linear_seq(sequence))
+>>> [1,2,3,4,5,6,7]
 ```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
