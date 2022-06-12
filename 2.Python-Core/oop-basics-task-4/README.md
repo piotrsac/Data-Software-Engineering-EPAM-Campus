@@ -1,6 +1,6 @@
 ## OOP Basics. Task 4
 
-Implement a custom dictionary that will memorize the 10 latest changed keys.
+Implement a custom dictionary that will memorize the 5 latest changed keys.
 Using method "get_history" return these keys.
 
 Example:
