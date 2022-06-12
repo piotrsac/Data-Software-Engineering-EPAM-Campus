@@ -1,7 +1,11 @@
-# Data types. Final task 1.
-
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
+## Magic methods. Task 6
+***
+Create a context manager `Cd` which changes the current directory to pointed one.
+For example:
+```python
+with Cd('/home')
 ```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
+When entering the context you need to save the previous directory and when you exit you need to restore it.
+During context manager initialization check that the passed directory is a directory and exists.
+If the passed directory is not a directory or does not exist raise `ValueError`.
+Use the following functions from the `os` module: `getcwd`, `chdir`, `path.isdir`
