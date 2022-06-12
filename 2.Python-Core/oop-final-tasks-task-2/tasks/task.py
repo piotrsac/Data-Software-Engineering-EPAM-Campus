@@ -1,7 +1,6 @@
-from typing import List
-
-def check(lst: List):
-    """
-    Add your code here or call it from here   
-    """
-    pass
+class Cipher:
+    def encode(self, data):
+        pass
+    
+    def decode(self, data):
+        pass
