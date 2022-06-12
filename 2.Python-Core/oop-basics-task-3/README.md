@@ -1,7 +1,33 @@
-# Data types. Final task 1.
+# OOP Basics. Task 3
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
+Implement a Counter class that optionally accepts the start value and the counter stop value.
+If the start value is not specified the counter should begin with 0.
+If the stop value is not specified it should be counting up infinitely.
+If the counter reaches the stop value, print "Maximal value is reached."
+
+Implement two methods: "increment" and "get"
+
+Example:
+```python
+>>> c = Counter(start=42)
+>>> c.increment()
+>>> c.get()
+43
+
+>>> c = Counter()
+>>> c.increment()
+>>> c.get()
+1
+>>> c.increment()
+>>> c.get()
+2
+
+>>> c = Counter(start=42, stop=43)
+>>> c.increment()
+>>> c.get()
+43
+>>> c.increment()
+Maximal value is reached.
+>>> c.get()
+43
 ```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
