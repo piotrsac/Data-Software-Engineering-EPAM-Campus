@@ -1,5 +1,5 @@
 class Field:
-    __value
+    __value = None
     def __init__(self):
         self.__value = None
     # TODO: add your code here
