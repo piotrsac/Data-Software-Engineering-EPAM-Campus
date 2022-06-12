@@ -1,7 +1,11 @@
-# Data types. Final task 1.
+## Magic methods. task 5
+***
+Create a context manager `TempDir` (Use Context Manager protocol - methods `__enter__`, `__exit__`):
+1. When entering the context, a new temporary directory is created with random, unique name.
+   Use `os.mkdir` to create the directory.
+2. Until exiting this context the new created directory becomes current one and all actions are executed 
+   in scope of this new directory.
+3. When exiting this context, the temporary directory is removed with all files in it.
+   Use `rmtree` from `shutil` to remove whole directory.
+4. The new working directory becomes the same as before entering context.
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
-```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
