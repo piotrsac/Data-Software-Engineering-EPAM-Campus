@@ -1,7 +1,10 @@
-# Data types. Final task 1.
+## OOP Basics. Task 1
+***
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
-```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
+Develop a class `Field` with "full encapsulation", whose attributes are accessed and data changes are implemented through method calls.
+
+
+In OOP, it is generally accepted to start the names of methods for extracting data with the word *"get"*,
+and the names of the methods in which fields are equated to a certain value - *"set"*.
+
+In this task, you need to implement `get_field` and `set_field` methods for `Field` class (`__value` property).

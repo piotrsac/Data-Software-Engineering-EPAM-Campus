@@ -1,7 +1,5 @@
-from typing import List
+class Field:
+    def __init__(self):
+        self.__value = None
+    # TODO: add your code here
 
-def check(lst: List):
-    """
-    Add your code here or call it from here   
-    """
-    pass
