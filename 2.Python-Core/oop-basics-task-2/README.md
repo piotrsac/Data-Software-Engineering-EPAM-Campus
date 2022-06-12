@@ -1,7 +1,23 @@
-# Data types. Final task 1.
+### OOP Basics. Task 2
+***
+#### Description
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
-```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
+Create a class `SchoolMember` which represents any person in school.
+Classes `Teacher` and `Student` are inherited from `SchoolMember`. 
+
+Classes should have the same interface with the public `show ()` method.
+`Teacher` accepts *name* (str), *age* (int), *salary* (int).
+`Student` accepts *name* (str), *age* (int), *grades*.
+Move the same logic of initialization to the class `SchoolMember`.
+
+Method `show()` returns string (see string patters in *Example*).
+
+#### Example
+
+    >>> persons = [Teacher("Mr.Snape", 40, 3000), Student("Harry", 16, 75)]
+
+    >>> for person in persons:
+           print(person.show())
+
+    "Name: Mr.Snape, Age: 40, Salary: 3000"
+    "Name: Harry, Age: 16, Grades: 75"

@@ -1,7 +1,13 @@
-from typing import List
+# Complete the following code according to the task in README.md.
+# Don't change names of classes. Create names for the variables
+# exactly the same as in the task.
+class SchoolMember:
+    pass
 
-def check(lst: List):
-    """
-    Add your code here or call it from here   
-    """
+
+class Teacher:
+    pass
+
+
+class Student:
     pass
