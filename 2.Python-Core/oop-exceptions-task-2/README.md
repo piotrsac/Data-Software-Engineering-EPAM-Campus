@@ -1,7 +1,19 @@
-# Data types. Final task 1.
+### OOP. Exceptions. Task 2
+***
+#### Description
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
-```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
+Write a function `divide` which accepts a string that contains two integers, separated by spaces.
+You have to perform the division operation (`a / b`) and return the result (float) or an error message.
+
+The structure of the error message is the following: `Error code: {error message}`.
+
+#### Example
+
+    >>> divide("4 2")
+    2.0
+
+    >>> divide("4 0")
+    "Error code: division by zero"
+
+    >>> divide("* 1")
+    "Error code: invalid literal for int() with base 10: '*'"
