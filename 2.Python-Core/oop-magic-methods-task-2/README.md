@@ -1,4 +1,5 @@
 ### Magic methods. Task 2 
+
 Create a hierarchy out of birds. 
 Implement 4 classes:
 * class `Bird` with an attribute `name` and methods `fly` and `walk`.
