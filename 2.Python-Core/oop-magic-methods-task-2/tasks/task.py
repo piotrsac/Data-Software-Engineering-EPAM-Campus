@@ -1,7 +1,14 @@
-from typing import List
+class Bird:
+    pass
 
-def check(lst: List):
-    """
-    Add your code here or call it from here   
-    """
+
+class FlyingBird:
+    pass
+
+
+class NonFlyingBird:
+    pass
+
+
+class SuperBird:
     pass
