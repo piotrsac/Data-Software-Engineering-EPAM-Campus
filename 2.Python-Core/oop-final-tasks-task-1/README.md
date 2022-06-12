@@ -1,7 +1,13 @@
-# Data types. Final task 1.
+## Final tasks. Task 1
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
-```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
+A singleton is a class that allows only a single instance of itself to be created and gives access to that created instance. 
+Implement singleton logic inside your custom class using a method to initialize class instance.
+
+Example:
+
+```python
+>>> p = Sun.inst()
+>>> f = Sun.inst()
+>>> p is f
+True
+
