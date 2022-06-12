@@ -1,7 +1,7 @@
 from typing import List
 
-def check(lst: List):
-    """
-    Add your code here or call it from here   
-    """
-    pass
+
+class Counter:
+    def __init__(self, values: List[int]):
+        self.values = values
+    # TODO: add your code here
