@@ -1,2 +1,2 @@
-class Counter
+class Counter:
     pass
