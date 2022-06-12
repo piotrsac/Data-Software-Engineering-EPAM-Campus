@@ -1,7 +1,15 @@
-# Data types. Final task 1.
+## OOP Basics. Task 4
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
+Implement a custom dictionary that will memorize the 10 latest changed keys.
+Using method "get_history" return these keys.
+
+Example:
+```python
+>>> d = HistoryDict({"foo": 42})
+>>> d.set_value("bar", 43)
+>>> d.get_history()
+
+["bar"]
 ```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
+
+<em>After your own implementation of the class have a look at collections.deque https://docs.python.org/3/library/collections.html#collections.deque </em>
