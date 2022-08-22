@@ -1,7 +1,10 @@
-# Data types. Final task 1.
+# Data types. Strings. Task 2
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
+Implement a function `get_longest_word(s: str) -> str` which returns the longest word in the given string. The word can contain any symbols except whitespaces (' ', '\n', '\t' and so on). If there are multiple longest words in the string with the same length return the word that occurs first.
+
+__Example:__
+
+```python
+>>> get_longest_word('Python is simple and effective!')
+'effective!'
 ```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}

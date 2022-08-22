@@ -1,7 +1,5 @@
-from typing import List
-
-def check(lst: List):
+def get_longest_word( s: str) -> str:
     """
-    Add your code here or call it from here   
+     Add your code here 
     """
-    pass
+    return ''
