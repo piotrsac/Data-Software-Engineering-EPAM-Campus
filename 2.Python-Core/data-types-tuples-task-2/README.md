@@ -1,7 +1,15 @@
-# Data types. Final task 1.
+# Data types. Tuples. Task 2
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
+Implement a function `get_pairs(lst: List) -> List[Tuple]` which returns a list
+of tuples containing pairs of elements. Pairs should be formed as in the
+example. If there is only one element in the list return `None` instead.
+
+__Example:__
+```python
+>>> get_pairs([1, 2, 3, 8, 9])
+[(1, 2), (2, 3), (3, 8), (8, 9)]
+>>> get_pairs(['need', 'to', 'sleep', 'more'])
+[('need', 'to'), ('to', 'sleep'), ('sleep', 'more')] 
+>>> get_pairs([1])
+None
 ```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}

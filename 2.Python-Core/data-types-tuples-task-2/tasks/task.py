@@ -1,7 +1,4 @@
-from typing import List
+from typing import Tuple, List
 
-def check(lst: List):
-    """
-    Add your code here or call it from here   
-    """
-    pass
+def get_pairs(lst: List[int]) -> List[Tuple[int, int]]:
+  return []
