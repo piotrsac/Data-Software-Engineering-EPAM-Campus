@@ -1,4 +1,4 @@
-# Data types. Tuples. Task 1.
+# Data types. Tuples. Task 1
 
 Implement a function `get_tuple(num: int) -> Tuple[int]` which returns a tuple of a given integer's digits.
 
