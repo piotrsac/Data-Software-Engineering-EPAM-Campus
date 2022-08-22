@@ -1,7 +1,5 @@
-from typing import List
-
-def check(lst: List):
+def check_str(s: str) -> bool:
     """
-    Add your code here or call it from here   
+    Add your code here
     """
-    pass
+    return False
