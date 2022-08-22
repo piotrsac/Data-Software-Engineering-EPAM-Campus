@@ -1,7 +1,14 @@
-# Data types. Final task 1.
+# Data types. Lists. Task 1
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
+Write a Python program that accepts a sequence of words as input and prints the unique words in sorted form.
+
+__Examples:__
+
+Input:
+```python 
+['red', 'white', 'black', 'red', 'green', 'black'] 
 ```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
+Output: 
+```python 
+['black', 'green', 'red', 'white']
+```

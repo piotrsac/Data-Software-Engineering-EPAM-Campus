@@ -1,7 +1,4 @@
 from typing import List
 
-def check(lst: List):
-    """
-    Add your code here or call it from here   
-    """
-    pass
+def sort_unique_elements(str_list: List[str]) -> List[str]:
+  return []
