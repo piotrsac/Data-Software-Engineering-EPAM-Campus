@@ -1,7 +1,13 @@
-# Data types. Final task 1.
+# Data types. Lists. Task 3
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
+Implement a function `foo(List[int]) -> List[int]` which, given a list of
+integers, return a new list such that each element at index `i` of the new list
+is the product of all the numbers in the original array except the one at `i`.
+
+__Example:__
+```python
+>>> foo([1, 2, 3, 4, 5])
+[120, 60, 40, 30, 24]
+>>>foo([3, 2, 1])
+[2, 3, 6]
 ```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
