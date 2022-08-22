@@ -1,7 +1,4 @@
-from typing import List
+from typing import Tuple
 
-def check(lst: List):
-    """
-    Add your code here or call it from here   
-    """
-    pass
+def get_tuple(num: int) -> Tuple[int]:
+  return tuple()

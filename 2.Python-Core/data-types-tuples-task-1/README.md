@@ -1,7 +1,9 @@
-# Data types. Final task 1.
+# Data types. Tuples. Task 1.
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
+Implement a function `get_tuple(num: int) -> Tuple[int]` which returns a tuple of a given integer's digits.
+
+__Example:__
+```python
+>>> get_tuple(87178291199)
+(8, 7, 1, 7, 8, 2, 9, 1, 1, 9, 9)
 ```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
