@@ -1,7 +1,10 @@
-from typing import List
 
-def check(lst: List):
-    """
-    Add your code here or call it from here   
-    """
-    pass
+def validate():
+    '''
+    Add coresponded arguments and implementation here. 
+    '''
+    pass 
+
+@validate
+def set_pixel(x: int, y: int, z: int) -> str:
+  return "Pixel created!"
