@@ -1,7 +1,5 @@
-from typing import List
-
-def check(lst: List):
+def replacer(s: str) -> str:
     """
-    Add your code here or call it from here   
+    Add your code here
     """
-    pass
+    return ''
