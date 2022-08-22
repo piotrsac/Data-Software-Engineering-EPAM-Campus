@@ -1,7 +1,4 @@
-from typing import List
+from typing import Dict
 
-def check(lst: List):
-    """
-    Add your code here or call it from here   
-    """
-    pass
+def get_dict(s: str) -> str:
+  return {}

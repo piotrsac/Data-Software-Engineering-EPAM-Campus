@@ -1,7 +1,10 @@
 # Data types. Final task 1.
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
-```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
+Write a Python program to count the number of characters (character frequency) in a string (ignore the case of letters).
+Result should be sorted by key
+
+__Examples:__
+
+Input: `'Oh, it is python'`
+
+Output: `{" ": 3, ",": 1, "O": 1, "h": 2, "i": 2, "n": 1, "o": 1, "p": 1, "s": 1, "t": 2, "y": 1}`
