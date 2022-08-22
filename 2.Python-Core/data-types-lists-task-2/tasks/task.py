@@ -1,7 +1,7 @@
-from typing import List
+from typing import Union, List
 
-def check(lst: List):
-    """
-    Add your code here or call it from here   
-    """
-    pass
+ListType = List[Union[int, str]]
+
+
+def get_fizzbuzz_list(n: int) -> ListType:
+  return []
