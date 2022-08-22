@@ -1,7 +1,8 @@
-from typing import List
+from typing import Union
 
-def check(lst: List):
-    """
-    Add your code here or call it from here   
-    """
-    pass
+NumType = Union[int, float]
+
+def some_expression_with_rounding(a: NumType, b: NumType) -> NumType:
+  result = 0
+  # add your code here
+  return result

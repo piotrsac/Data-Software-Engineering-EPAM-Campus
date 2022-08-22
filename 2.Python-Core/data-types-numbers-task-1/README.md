@@ -1,7 +1,8 @@
-# Data types. Final task 1.
+# Data types. Numbers. Task 1
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
+## Rounding
+Create a function with two parameters a and b. The function calculates the following expression:
+```python
+(12 * a + 25 * b) / (1 + a**(2**b))	
 ```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
+and returns a result of the expression rounded up to the second decimal place.
