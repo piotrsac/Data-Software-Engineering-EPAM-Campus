@@ -1,7 +1,14 @@
-# Data types. Final task 1.
+### Functions. Decorators. Decorators. Task 4. 
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
+#### Decorators Factory
+
+Create a decorators factory (decorator itself). The factory accepts a function (lambda) as an input and returns a decorator that will return the result of the function as the first argument, the result of the decorated function is passed. The function which the factory accepts (in the example below it is a lambda) can take one positional parameter only.
+
+For example:
+```python
+>>> @decorator_apply(lambda user_id: user_id + 1)
+>>> def return_user_id(num: int): 
+        return num
+>>> return_user_id(42) 
+>>> 43
 ```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
