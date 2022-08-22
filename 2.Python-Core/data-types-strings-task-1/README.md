@@ -1,7 +1,12 @@
-# Data types. Final task 1.
+# Data types. Strings. Task 1
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
+## Fractions
+Create a function that takes two parameters of string type which are fractions with the same denominator and returns a sum expression of these fractions and the sum result. 
+
+__For example:__
+```python
+>>> a_b = '1/3'
+>>> c_b = '5/3'
+>>> get_fractions(a_b, c_b)
+'1/3 + 5/3 = 6/3'
 ```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
