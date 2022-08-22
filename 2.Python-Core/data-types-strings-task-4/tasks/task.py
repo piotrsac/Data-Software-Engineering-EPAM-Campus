@@ -1,4 +1,4 @@
-def check_str(s: str) -> bool:
+def check_str(s: str):
     """
     Add your code here
     """
