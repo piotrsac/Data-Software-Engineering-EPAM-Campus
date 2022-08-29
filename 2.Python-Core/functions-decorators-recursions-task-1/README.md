@@ -7,7 +7,8 @@ def seq_sum(sequence):
     pass
   
 sequence = [1,2,3,[4,5, (6,7)]]
-print(seq_sum(sequence))
->>> 28
+
+>>> print(seq_sum(sequence))
+28
 ```
 }
