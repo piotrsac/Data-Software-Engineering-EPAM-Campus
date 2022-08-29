@@ -7,6 +7,7 @@ def linear_seq(sequence):
     pass
   
 sequence = [1,2,3,[4,5, (6,7)]]
-print(linear_seq(sequence))
->>> [1,2,3,4,5,6,7]
+
+>>> print(linear_seq(sequence))
+[1,2,3,4,5,6,7]
 ```
