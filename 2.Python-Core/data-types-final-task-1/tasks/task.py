@@ -1,4 +1,4 @@
-from typing import Any, List, Str
+from typing import Any, List, Set
 
 def check(lst: List[Dict[Any, Any]]) -> Set[str]:
     """
