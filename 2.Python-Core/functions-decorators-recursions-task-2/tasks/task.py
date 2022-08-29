@@ -1,6 +1,6 @@
-from typing import List
+from typing import Any, List
 
-def linear_seq(sequence: List) -> List:
+def linear_seq(sequence: List[Any]) -> List[Any]:
     """
     Add your code here or call it from here   
     """
