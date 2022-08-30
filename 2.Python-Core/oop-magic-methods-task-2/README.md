@@ -28,7 +28,7 @@ AttributeError: 'Penguin' object has no attribute 'fly'
 
 c = FlyingBird("Canary")
 >>> str(c)
-"Canary can walk and fly"
+"Canary bird can walk and fly"
 >>> c.eat()
 "It eats mostly grains"
 
@@ -36,9 +36,7 @@ s = SuperBird("Gull")
 >>> str(s)
 "Gull bird can walk, swim and fly"
 >>> s.eat()
-"It eats fish"
+"It eats mostly fish"
 ```
 
-Have a look at __mro__ method of your last class.
-
-
+Have a look at the **mro** method or the attribute **\_\_mro\_\_** of your last class.
