@@ -12,4 +12,4 @@ Example:
 ["bar"]
 ```
 
-<em>After your own implementation of the class have a look at collections.deque https://docs.python.org/3/library/collections.html#collections.deque </em>
+*After your own implementation of the class have a look at collections.deque https://docs.python.org/3/library/collections.html#collections.deque*
