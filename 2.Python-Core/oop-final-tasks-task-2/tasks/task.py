@@ -5,4 +5,4 @@ class Cipher:
     
     def decode(self, data):
         pass
-         #TODO: please add your code here
+        #TODO: please add your code here
