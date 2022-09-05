@@ -1,6 +1,6 @@
-from typing import List
+from typing import Dict
 
-def check(lst: List):
+def generate_squares(num: int)-> Dict[int, int]:
     """
     Add your code here or call it from here   
     """

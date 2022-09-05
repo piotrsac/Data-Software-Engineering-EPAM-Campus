@@ -1,7 +1,10 @@
-# Data types. Final task 1.
+### Functions. Decorators. Funstions arguments. Task 0. 
+***
 
-Write a Python program to print all unique values of all dictionaries in a list.
-Examples:
+Implement a function that takes a number as an argument and returns a dictionary, where the key is a number and the value is the square of that number.
+
+**Example:**
+```python
+>>> generate_squares(5)
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
 ```
-Input: [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
