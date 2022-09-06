@@ -1,7 +1,7 @@
 
 def validate():
     '''
-    Add coresponded arguments and implementation here. 
+    Add corresponded arguments and implementation here. 
     '''
     pass 
 
