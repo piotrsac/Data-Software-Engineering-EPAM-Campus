@@ -1,2 +1,3 @@
 def get_dict(s: str) -> str:
-  return ""
+    # TODO: Add your code here
+    return ""
