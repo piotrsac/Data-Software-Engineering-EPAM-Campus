@@ -1,4 +1,5 @@
 from typing import Tuple
 
 def get_tuple(num: int) -> Tuple[int]:
-  return tuple()
+    # TODO: Add your code here
+    return tuple()
