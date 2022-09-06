@@ -1,7 +1,6 @@
 # Data types. Dictionaries. Task 1.
 
 Write a Python program to count the number of characters (character frequency) in a string (ignore the case of letters).
-Result should be sorted by key
 
 __Examples:__
 
