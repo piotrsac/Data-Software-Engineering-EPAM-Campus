@@ -40,7 +40,7 @@ instance of a required currency.
             f"r = {r}\n"
             f"r.to_currency(Dollar) = {r.to_currency(Dollar)}\n"
             f"r.to_currency(Euro)   = {r.to_currency(Euro)}\n"
-            f"r.to_currency(Pound) = {r.to_currency(Sterling)}\n"
+            f"r.to_currency(Pound) = {r.to_currency(Pound)}\n"
         )
         r = 100 RUB
         r.to_currency(Dollar) = 2.0 USD  # Dollar instance printed
