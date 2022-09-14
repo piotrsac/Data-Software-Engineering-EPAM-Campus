@@ -4,11 +4,11 @@ from typing import Type
 
 class Currency:
     """
-    1 EUR = 2 USD = 100 RUB
+    1 EUR = 2 USD = 100 GBP
 
-    1 EUR = 2 USD    ;  1 EUR = 100 RUB
-    1 USD = 0.5 EUR  ;  1 USD = 50 RUB
-    1 RUB = 0.02 USD ;  1 RUB = 0.01 EUR
+    1 EUR = 2 USD    ;  1 EUR = 100 GBP
+    1 USD = 0.5 EUR  ;  1 USD = 50 GBP
+    1 GBP = 0.02 USD ;  1 GBP = 0.01 EUR
     """
 
     def __init__(self, value: float):
@@ -30,5 +30,5 @@ class Dollar(Currency):
     pass
 
 
-class Rubble(Currency):
+class Pound(Currency):
     pass
