@@ -1,7 +1,8 @@
-# Data types. Final task 2.
+# Data Types. Final task 2
 
 Write a program which makes a pretty print of a part of the multiplication table.
-Examples:
+
+__Example__:
 ```
 Input:
 row_start = 2
