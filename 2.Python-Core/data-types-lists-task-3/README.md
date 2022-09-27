@@ -1,7 +1,7 @@
-# Data types. Lists. Task 3
+# Data Types. Lists. Task 3
 
 Implement a function `foo(List[int]) -> List[int]` which, given a list of
-integers, return a new list such that each element at index `i` of the new list
+integers, returns a new list such that each element at index `i` of the new list
 is the product of all the numbers in the original array except the one at `i`.
 
 __Example:__
