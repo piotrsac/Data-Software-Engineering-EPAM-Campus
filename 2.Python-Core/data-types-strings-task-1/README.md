@@ -1,4 +1,4 @@
-# Data types. Strings. Task 1
+# Data Types. Strings. Task 1
 
 ## Fractions
 Create a function that takes two parameters of string type which are fractions with the same denominator and returns a sum expression of these fractions and the sum result. 
