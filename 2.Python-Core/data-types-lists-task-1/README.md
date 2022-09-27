@@ -1,6 +1,6 @@
-# Data types. Lists. Task 1
+# Data Types. Lists. Task 1
 
-Write a Python program that accepts a sequence of words as input and prints the unique words in sorted form.
+Write a Python program that accepts a sequence of words as input and prints the unique words in a sorted form.
 
 __Examples:__
 
