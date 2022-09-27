@@ -1,7 +1,7 @@
-# Data types. Numbers. Task 1
+# Data Types. Numbers. Task 1
 
 ## Rounding
-Create a function with two parameters a and b. The function calculates the following expression:
+Create a function with two parameters `a` and `b`. The function calculates the following expression:
 ```python
 (12 * a + 25 * b) / (1 + a**(2**b))	
 ```
