@@ -1,8 +1,8 @@
-# Data types. Tuples. Task 2
+# Data Types. Tuples. Task 2
 
 Implement a function `get_pairs(lst: List) -> List[Tuple]` which returns a list
-of tuples containing pairs of elements. Pairs should be formed as in the
-example. If there is only one element in the list return `None` instead.
+of tuples containing pairs of elements. The pairs should be formed as in the
+example. If there is only one element in the list, return `None` instead.
 
 __Example:__
 ```python
