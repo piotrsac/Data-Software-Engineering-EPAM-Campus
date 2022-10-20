@@ -2,7 +2,7 @@
 
 Implement a function `get_pairs(lst: List) -> List[Tuple]` which returns a list
 of tuples containing pairs of elements. The pairs should be formed as in the
-example. If there is only one element in the list, return `None` instead.
+example. If there is only one element in the list, return `[]` instead.
 
 __Example:__
 ```python
@@ -11,5 +11,5 @@ __Example:__
 >>> get_pairs(['need', 'to', 'sleep', 'more'])
 [('need', 'to'), ('to', 'sleep'), ('sleep', 'more')] 
 >>> get_pairs([1])
-None
+[]
 ```
