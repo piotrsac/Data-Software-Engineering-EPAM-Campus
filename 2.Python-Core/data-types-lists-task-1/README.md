@@ -6,7 +6,7 @@ __Examples:__
 
 Input:
 ```python 
-['red', 'white', 'black', 'red', 'green', 'black'] 
+('red', 'white', 'black', 'red', 'green', 'black') 
 ```
 Output: 
 ```python 

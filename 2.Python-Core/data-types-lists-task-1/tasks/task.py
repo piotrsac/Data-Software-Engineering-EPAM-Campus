@@ -1,5 +1,5 @@
-from typing import List
+from typing import List, Tuple
 
-def sort_unique_elements(str_list: List[str]) -> List[str]:
+def sort_unique_elements(str_list: Tuple[str]) -> List[str]:
     # TODO: Add your code here
     return []
