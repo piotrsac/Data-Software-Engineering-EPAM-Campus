@@ -15,7 +15,7 @@ class Currency:
         pass
 
     @classmethod
-    def course(cls, other_cls: Type[Currency]) -> Currency:
+    def course(cls, other_cls: Type[Currency]) -> str:
         raise NotImplementedError
 
     def to_currency(self, other_cls: Type[Currency]):
