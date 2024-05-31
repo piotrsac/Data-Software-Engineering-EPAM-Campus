@@ -1,4 +1,4 @@
-from typing import List, Dict
+from typing import Dict
 
-def combine_dicts(*args:List[Dict[str, int]]) -> Dict[str, int]:
+def combine_dicts(*args:Dict[str, int]) -> Dict[str, int]:
     pass
