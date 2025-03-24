@@ -1,6 +1,7 @@
 from typing import Any, Dict, List, Set
 
-def check(lst: List[Dict[Any, Any]]) -> Set[Any]
+def check(lst: List[Dict[Any, Any]]) -> Set[Any]:
+
     result = set()
     for i in lst:
         for j in i.values():
