@@ -1,6 +1,0 @@
-foo; args: 1, 2; kwargs: c=3; execution_time: 0.2027745246887207 sec.
-foo; args: 1, 2; kwargs: c=3; execution_time: 0.21 sec.
-foo; args: a=1, b=2; kwargs: c=3; execution_time: 0.21 sec.
-foo; args: a=1, b=2; kwargs: c=3; execution_time: 0.21 sec.
-foo; args: a=1, b=2; kwargs: c=3; execution_time: 0.21 sec.
-foo; args: a=1, b=2; kwargs: c=3; execution_time: 0.21 sec.

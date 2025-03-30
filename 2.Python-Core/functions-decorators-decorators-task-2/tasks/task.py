@@ -1,4 +1,3 @@
-from ctypes import HRESULT
 from time import time, sleep
 
 def log(fn):
@@ -23,12 +22,12 @@ def log(fn):
 
     return wrapper
 
-@log
-def foo(a, b, c):
-    sleep(0.2)
-    return a + b + c/a + c/b * 5/a
-
-foo(1, 2, c=3)
+# @log
+# def foo(a, b, c):
+#     sleep(0.2)
+#     return a + b + c/a + c/b * 5/a
+#
+# foo(1, 2, 3)
 
 """
 Example of using
