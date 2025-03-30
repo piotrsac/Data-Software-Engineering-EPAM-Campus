@@ -1,3 +1,4 @@
+from ctypes import HRESULT
 from time import time, sleep
 
 def log(fn):
@@ -6,13 +7,20 @@ def log(fn):
     """
     file=open('log.txt','a')
     def wrapper(*args, **kwargs):
+
         time_start = time()
-        fn(*args, **kwargs)
+        result = fn(*args, **kwargs)
         execution_time = time() - time_start
-        # line = [f'{fn.__name__}; args:{args}; kwargs:{kwargs}; execution_time: {execution_time}sec.\n']
-        arg_str = ', '.join(f'{arg}' for arg in args)
+
+        arg_names = fn.__code__.co_varnames[:fn.__code__.co_argcount]
+        arg_str = ', '.join(f'{key}={value}' for key,value in zip(arg_names, args))
+
         kwarg_str = ', '.join(f'{key}={value}' for key,value in kwargs.items())
-        file.write(f'{fn.__name__}; args: {arg_str}; kwargs: {kwarg_str}; execution_time: {execution_time} sec.\n')
+
+        file.write(f'{fn.__name__}; args: {arg_str}; kwargs: {kwarg_str}; execution_time: {execution_time:.2f} sec.\n')
+
+        return result
+
     return wrapper
 
 @log
