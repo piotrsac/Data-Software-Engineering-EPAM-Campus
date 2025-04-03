@@ -8,7 +8,8 @@ def split(data: str, sep=' ', maxsplit=-1) -> List[str]:
     :param maxsplit: maximum number of elements in str.split, if -1 then no limit
     :return: list of strings splitted by separator
     '''
-    data=data.strip()
+    if sep==' ':
+        data=data.strip()
     working_data=data
     if len(data) == 0 and sep == ' ': #weird edge cases, that's how str.split() works
         return []
@@ -42,6 +43,8 @@ def split(data: str, sep=' ', maxsplit=-1) -> List[str]:
 if __name__ == '__main__':
     assert split('') == [],print(split(''))
     assert split('') == ''.split()
+    assert split('',sep=',') == ''.split(',')
+    assert split(' ', sep=',') == ' '.split(','),print(' '.split(','))
     assert split('',sep=',') == ''.split(sep=','),print(''.split(sep=','))
     assert split('123  123   123 123') == '123  123   123 123'.split(),print(split('123  123   123 123'))
     assert split(',123,', sep=',') == ['', '123', ''],print(split(',123,', sep=','))
@@ -57,4 +60,3 @@ if __name__ == '__main__':
     assert split(';;;;;;;;;;set;;;;;;;23;;;;;;;;;;;',sep=';') == ';;;;;;;;;;set;;;;;;;23;;;;;;;;;;;'.split(sep=';'),print(';;;;;;;;;;set;;;;;;;23;;;;;;;;;;;'.split(sep=';'))
     assert split('set;:23', sep=';:', maxsplit=0) == ['set;:23'],print(split('set;:23', sep=';:', maxsplit=0))
     assert split('set;:;:23', sep=';:', maxsplit=2) == ['set', '', '23']
-
