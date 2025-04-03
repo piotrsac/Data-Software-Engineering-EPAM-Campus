@@ -6,41 +6,39 @@ def split(data: str, sep=' ', maxsplit=-1) -> List[str]:
     :param data: string
     :param sep: separator
     :param maxsplit: maximum number of elements in str.split, if -1 then no limit
-    :return: list of strings splitted by separator
+    :return: list of strings split by separator
     '''
     if sep==' ':
         data=data.strip()
-    working_data=data
-    if len(data) == 0 and sep == ' ': #weird edge cases, that's how str.split() works
+    if len(data) == 0 and sep == ' ': #weird edge case, that's how str.split() works
         return []
-    if len(data) == 0:
-        return ['']
-    if maxsplit == 0:
-        return [data.strip()]
+    working_data = data
     result=[]
-    last_split=-10**9
+    last_split=-10**6
+    def add_element_to_result():
+        nonlocal last_split,i,maxsplit
+        result.append(working_data[last_split:i])
+        last_split = i + len(sep)
+        i += len(sep) - 1
+        maxsplit -= 1
     for i in range(len(data)):
-        if data[i] == sep[0]:
-            if sep==' ' and last_split == i:
+        if data[i] == sep[0]: #when first element of separator appears
+            if sep==' ' and last_split == i: #we think of a series of spaces as one
                 last_split = i + len(sep)
                 i += len(sep) - 1
                 continue
             for j in range(len(sep)):
-                if data[i + j] != sep[j]:
+                if data[i + j] != sep[j]: #break when it's not separator
                     break
             else:
-                if maxsplit == 0:
+                if maxsplit == 0: #if we have no more splits left
                     break
-                result.append(working_data[last_split:i])
-                last_split = i + len(sep)
-                i += len(sep) - 1
-                maxsplit-=1
-                continue
+                add_element_to_result()
 
-    result.append(working_data[last_split:])
+    result.append(working_data[last_split:]) #we add what's left to result
     return result
 
-if __name__ == '__main__':
+if __name__ == '__main__': #yes, it needed that many asserts
     assert split('') == [],print(split(''))
     assert split('') == ''.split()
     assert split('',sep=',') == ''.split(',')
