@@ -38,7 +38,7 @@ def split(data: str, sep=' ', maxsplit=-1) -> List[str]:
     result.append(working_data[last_split:]) #we add what's left to result
     return result
 
-if __name__ == '__main__': #yes, it needed that many asserts
+if __name__ == '__main__': #yes, it needed that many asserts (no i won't make a test function)
     assert split('') == [],print(split(''))
     assert split('') == ''.split()
     assert split('',sep=',') == ''.split(',')
