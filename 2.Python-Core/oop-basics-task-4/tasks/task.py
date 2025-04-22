@@ -1,5 +1,5 @@
 class HistoryDict:
-    def __init__(self, dictionary = {}) -> None:
+    def __init__(self, dictionary = None) -> None:
         self.dictionary = dictionary
         self.history = []
         self.index = 0
