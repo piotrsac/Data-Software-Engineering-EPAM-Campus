@@ -5,7 +5,8 @@ class SchoolMember:
     def __init__(self, name, age):
         self.name = name
         self.age = age
-
+    def show(self):
+        return f'Name: {self.name}, Age: {self.age}'
 class Teacher(SchoolMember):
     def __init__(self, name, age, salary):
         super().__init__(name, age)
@@ -21,6 +22,7 @@ class Student(SchoolMember):
         return f'Name: {self.name}, Age: {self.age}, Grades: {self.grades}'
 
 if __name__ == '__main__':
-    persons = [Teacher("Mr.Snape", 40, 3000), Student("Harry", 16, 75)]
+    persons = [Teacher("Mr.Snape", 40, 3000), Student("Harry", 16, 75),
+               SchoolMember("Robert", 71)]
     for person in persons:
         print(person.show())
