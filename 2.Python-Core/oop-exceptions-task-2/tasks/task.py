@@ -13,12 +13,12 @@ def divide(str_with_ints: str) -> Union[float, str]:
         error response in "Error code: {error message}: str;
     """
     if len(str_with_ints.split()) != 2:
-        raise Exception('Error code: There should be two numbers')
+        return 'Error code: There should be two numbers'
     if str_with_ints.split()[1] == '0':
-        raise Exception('Error code: division by zero')
+        return 'Error code: division by zero'
     for string in str_with_ints.split():
         if not string.isdigit():
-            raise Exception(f'Error Code: invalid literal for int() with base 10: \'{string}\'')
+            return f'Error Code: invalid literal for int() with base 10: \'{string}\''
     return int(str_with_ints.split()[0]) / int(str_with_ints.split()[1])
 
 if __name__ == '__main__':
