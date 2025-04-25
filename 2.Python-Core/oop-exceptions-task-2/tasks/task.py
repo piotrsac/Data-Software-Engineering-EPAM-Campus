@@ -1,8 +1,5 @@
 from typing import Union
 
-class Why(Exception):
-    pass
-
 def divide(str_with_ints: str) -> Union[float, str]:
     """
     Returns the result of dividing two numbers or an error message.
