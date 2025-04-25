@@ -18,7 +18,7 @@ def divide(str_with_ints: str) -> Union[float, str]:
         return 'Error code: division by zero'
     for string in str_with_ints.split():
         if not string.isdigit():
-            return f'Error Code: invalid literal for int() with base 10: \'{string}\''
+            return f'Error code: invalid literal for int() with base 10: \'{string}\''
     return int(str_with_ints.split()[0]) / int(str_with_ints.split()[1])
 
 if __name__ == '__main__':
