@@ -19,7 +19,3 @@ class LogFile(ContextDecorator):
         run_time = datetime.timedelta(seconds = t_time() - self.start_time)
         self.file.write(f'Start: {self.start_datetime} | Run: {run_time} | An error occurred: {exc_val}\n')
         self.file.close()
-
-
-if __name__ == "__main__":
-    pass
