@@ -1,6 +1,5 @@
 import os
 import shutil
-import tempfile
 from random import randint
 
 class TempDir:
@@ -9,11 +8,12 @@ class TempDir:
         self.temp_dir_path = None
 
     def __enter__(self):
-        dir_name = randint(0,9999999)
-        os.mkdir(f'{tempfile.gettempdir()}/{dir_name}')
-        self.temp_dir_path = f'{tempfile.gettempdir()}/{dir_name}'
         self.wd_path = os.getcwd()
+        self.temp_dir = os.path.join(self.wd_path, str(randint(0,999999)))
+
+        os.mkdir(self.temp_dir_path)
         os.chdir(self.temp_dir_path)
+        return self
 
     def __exit__(self, exc_type, exc_value, traceback):
         os.chdir(self.wd_path)
