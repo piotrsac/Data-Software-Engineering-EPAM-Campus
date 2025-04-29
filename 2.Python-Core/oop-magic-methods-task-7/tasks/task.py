@@ -17,7 +17,7 @@ class LogFile(ContextDecorator):
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         run_time = datetime.timedelta(seconds = t_time() - self.start_time)
-        self.file.write(f'Start: {self.start_datetime} | Run: {run_time} | An error occurred: {exc_val}')
+        self.file.write(f'Start: {self.start_datetime} | Run: {run_time} | An error occurred: {exc_val}\n')
         self.file.close()
 
 
