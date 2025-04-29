@@ -9,8 +9,7 @@ class TempDir:
 
     def __enter__(self):
         self.wd_path = os.getcwd()
-        self.temp_dir = os.path.join(self.wd_path, str(randint(0,999999)))
-
+        self.temp_dir_path = os.path.join(self.wd_path, str(randint(0,999999)))
         os.mkdir(self.temp_dir_path)
         os.chdir(self.temp_dir_path)
         return self
