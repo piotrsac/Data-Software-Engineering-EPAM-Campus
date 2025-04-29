@@ -11,14 +11,11 @@ class Cipher:
 
     def __shift(self, char) -> int:
         #shift of the letter in the alphabet, positive to the right, negative to the left
-        return ord(self.encrypted_alphabet[ord(char.lower()) - ord('a')]) - ord(char.lower())
-
+        return ord(self.__encrypted_alphabet[ord(char.lower()) - ord('a')])
 
     def __init__(self, key):
-        self.__key = key
         self.alphabet = string.ascii_lowercase
-        self.encrypted_alphabet = self.__encrypt(key)
-        # TODO: change encrypted alphabet to private
+        self.__encrypted_alphabet = self.__encrypt(key)
 
     def encode(self, data):
         result = ""
@@ -26,7 +23,7 @@ class Cipher:
             if char not in string.ascii_letters:
                 result += char
             else:
-                result += chr(ord(char) + self.__shift(char))
+                result += chr(ord(char) + self.__shift(char) - ord(char.lower()))
         return result
     
     def decode(self, data):
@@ -35,17 +32,15 @@ class Cipher:
             if char not in string.ascii_letters:
                 result += char
             else:
+                encrypted_letter = self.alphabet[self.__encrypted_alphabet.index(char.lower())]
                 if char.islower():
-                    result += self.alphabet[self.encrypted_alphabet.index(char.lower())]
+                    result += encrypted_letter
                 else:
-                    result += self.alphabet[self.encrypted_alphabet.index(char.lower())].upper()
+                    result += encrypted_letter.upper()
         return result
 
 
 if __name__ == '__main__':
-    # print(string.ascii_letters)
-    # print(ord('a'),ord('A'))
     cipher = Cipher("crypto")
-    print(cipher.encrypted_alphabet)
-    print(cipher.encode("Hello world"))
-    print(cipher.decode("Fjedhc dn atidsn"))
+    assert cipher.encode("Hello world") == "Btggj vjmgp"
+    assert cipher.decode("Fjedhc dn atidsn") == "Kojima is genius"
