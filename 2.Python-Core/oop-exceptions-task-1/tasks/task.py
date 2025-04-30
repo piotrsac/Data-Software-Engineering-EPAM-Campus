@@ -53,9 +53,8 @@ if __name__ == '__main__':
     assert pages.count_items_on_page(0) == 5
     assert pages.count_items_on_page(3) == 4
     try:
-        #pages.count_items_on_page(4)
-        #pages.find_page('great')
-        pass
+        pages.count_items_on_page(4)
+        pages.find_page('great')
     finally:
         assert pages.find_page('Your') == [0]
         assert pages.display_page(0) == 'Your '
