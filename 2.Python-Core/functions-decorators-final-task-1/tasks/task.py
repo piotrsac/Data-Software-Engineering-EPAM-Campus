@@ -21,6 +21,7 @@ def split(data: str, sep=' ', maxsplit=-1) -> List[str]:
         last_split = i + len(sep)
         i += len(sep) - 1
         maxsplit -= 1
+
     for i in range(len(data)):
         if data[i] == sep[0]: #when first element of separator appears
             if sep==' ' and last_split == i: #we think of a series of spaces as one

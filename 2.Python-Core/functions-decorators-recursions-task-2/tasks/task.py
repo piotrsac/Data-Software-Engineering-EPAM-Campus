@@ -1,9 +1,6 @@
 from typing import Any, List
 
 def linear_seq(sequence: List[Any]) -> List[Any]:
-    """
-    Add your code here or call it from here   
-    """
     result=[]
     for item in sequence:
         if type(item) == int:
@@ -13,4 +10,4 @@ def linear_seq(sequence: List[Any]) -> List[Any]:
     return result
 
 if __name__ == '__main__':
-    assert (linear_seq([1,2,3,[4,5,(6,7)]])) == [1,2,3,4,5,6,7],print(linear_seq([1,2,3,[4,5, (6,7)]]))
+    assert linear_seq([1,2,3,[4,5,(6,7)]]) == [1,2,3,4,5,6,7]

@@ -3,9 +3,6 @@ from functools import reduce
 
 
 def seq_sum(sequence: Union[List, Tuple]) -> int:
-    """
-    Add your code here or call it from here   
-    """
     result = 0
     if type(sequence) == int:
         return sequence
@@ -17,5 +14,4 @@ def seq_sum(sequence: Union[List, Tuple]) -> int:
     return result
 
 if __name__ == "__main__":
-
     assert seq_sum([1,2,3,[4,5, (6,7)]]) == 28

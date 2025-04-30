@@ -11,7 +11,6 @@ def get_tuple(num: int) -> Tuple[int]:
         t.append(num%10)
         num=num//10
     t.reverse()
-
     return tuple(t)
 
 if __name__ == '__main__':

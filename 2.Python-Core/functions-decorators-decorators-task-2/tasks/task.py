@@ -1,9 +1,6 @@
 from time import time, sleep
 
 def log(fn):
-    """
-    Add your code here or call it from here   
-    """
     file=open('log.txt','a')
     def wrapper(*args, **kwargs):
 
@@ -21,13 +18,6 @@ def log(fn):
         return result
 
     return wrapper
-
-# @log
-# def foo(a, b, c):
-#     sleep(0.2)
-#     return a + b + c/a + c/b * 5/a
-#
-# foo(1, 2, 3)
 
 """
 Example of using

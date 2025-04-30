@@ -1,7 +1,4 @@
 def replacer(s: str) -> str:
-    """
-    Add your code here
-    """
     t=''
     for i in range(len(s)):
         if s[i]=='\'':

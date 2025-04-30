@@ -1,7 +1,4 @@
 def check_str(s: str):
-    """
-    Add your code here
-    """
     s=s.lower()
     left=0
     right=len(s)-1

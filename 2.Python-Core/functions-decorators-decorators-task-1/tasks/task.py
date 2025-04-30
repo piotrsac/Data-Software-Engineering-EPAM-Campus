@@ -16,14 +16,10 @@ def time_decorator(fn):
         result = fn(*args, **kwargs)
         execution_time[fn.__name__] = time() - time_start
         return result
-
     return wrapper
 
 @time_decorator
 def func_add(a, b):
     sleep(0.2)
     return a + b
-
-# print(func_add(1, 2))
-# print(execution_time)
 

@@ -8,5 +8,4 @@ def generate_squares(num: int)-> Dict[int, int]:
 {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
 """
 if __name__ == '__main__':
-    print(generate_squares(5))
     assert generate_squares(5) == {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}

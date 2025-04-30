@@ -13,7 +13,6 @@ def get_fizzbuzz_list(n: int) -> ListType:
             t.append('Buzz')
         else:
             t.append(i)
-
     return t
 
 if __name__ == '__main__':

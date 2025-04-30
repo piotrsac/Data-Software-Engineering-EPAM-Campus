@@ -55,6 +55,7 @@ class Bus(Vehicle):
     def wheels_num(self):
         return 6
 
+
 if __name__ == '__main__':
     vehicles = (
         Car(brand_name="Toyota", year_of_issue=2020, base_price=1_000_000, mileage=150_000),
